@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="calculator-body">
+    <div class="output">
+      <input class="previous-operand" disabled type="text" id="prev-box">
+      <input class="current-operand" disabled type="text" id="output-box">
+    </div>
+    <button class="button-spl" onclick="allClear()">AC</button>
+    <button class="button-spl" onclick="del()">DEL</button>
+    <button class="button-spl" onclick="input('.')">.</button>
+    <button class="button-spl" onclick="input('+')">+</button>
+    <button onclick="input('9')">9</button>
+    <button onclick="input('8')">8</button>
+    <button onclick="input('7')">7</button>
+    <button class="button-spl" onclick="input('-')">-</button>
+    <button onclick="input('6')">6</button>
+    <button onclick="input('5')">5</button>
+    <button onclick="input('4')">4</button>
+    <button class="button-spl" onclick="input('*')">*</button>
+    <button onclick="input('3')">3</button>
+    <button onclick="input('2')">2</button>
+    <button onclick="input('1')">1</button>
+    <button class="button-spl" onclick="input('/')">/</button>
+    <button onclick="input('(')">(</button>
+    <button onclick="input('0')">0</button>
+    <button onclick="input(')')">)</button>
+    <button class="button-superior" onclick="calc()">=</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
